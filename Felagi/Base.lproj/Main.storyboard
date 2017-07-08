@@ -74,7 +74,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="signOutButton" destination="PdI-Aj-j1o" id="Dti-Rg-As8"/>
+                        <outlet property="signOutButton" destination="PdI-Aj-j1o" id="hsS-Eo-BrD"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Le4-Ry-8Dy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -87,7 +87,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GP5-yU-uW7" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Iyj-OQ-Siz">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Iyj-OQ-Siz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

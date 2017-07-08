@@ -11,12 +11,7 @@ import Firebase
 import GoogleSignIn
 
 class SignInViewController: UIViewController,GIDSignInUIDelegate {
-    /*
-    @IBAction func didTapSignOut(_ sender: Any) {
-        GIDSignIn.sharedInstance().signOut()
-        print("signed out")
-    }
-    */
+    
 
     
     override func viewDidLoad() {
@@ -34,14 +29,12 @@ class SignInViewController: UIViewController,GIDSignInUIDelegate {
         
         //add google button
         let googleButton = GIDSignInButton()
-        googleButton.frame = CGRect (x:16, y: 180, width: view.frame.width - 32, height: 50)
-        view.addSubview(googleButton)
+        googleButton.frame = CGRect (x:16, y: 400, width: view.frame.width - 32, height: 50)
         
+        view.addSubview(googleButton)
         
         GIDSignIn.sharedInstance().uiDelegate = self
         GIDSignIn.sharedInstance().signInSilently()
-        
-
     }
     
     //MARK: Actions

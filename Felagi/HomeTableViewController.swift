@@ -14,10 +14,19 @@ import os.log
 class HomeTableViewController: UITableViewController,GIDSignInUIDelegate {
     @IBOutlet weak var signOutButton: UIBarButtonItem!
     
+    
+    func refreshInterface() {
+        if let currentUser = GIDSignIn.sharedInstance().currentUser{
+            self.signOutButton.title = "Sign Out"
+        }else {
+            self.signOutButton.title = "Sign In"
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //setSignInButtonsTitle()
+        refreshInterface()
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -95,14 +104,23 @@ class HomeTableViewController: UITableViewController,GIDSignInUIDelegate {
         // Pass the selected object to the new view controller.
     }
     */
-
     /*
     func setSignInButtonsTitle() {
         //GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         
-        if let currentUser = Auth.auth().currentUser {
-            print(currentUser)
+        /*
+         if let currentUser = Auth.auth().currentUser {
+            print("the current user is \(currentUser)")
             signOutButton.title = "Sign In"
+        }
+        */
+        
+        Auth.auth().addStateDidChangeListener { auth, user in
+            if user != nil {
+                print("the current user is \(String(describing: user))")
+            } else {
+                print("there is no user")
+            }
         }
     }
     */
