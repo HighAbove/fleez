@@ -7,17 +7,81 @@
 //
 
 import UIKit
+import Firebase
+import GoogleSignIn
+
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
     var window: UIWindow?
-
-
+    var databaseRef: DatabaseReference!
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Use Firebase library to configure APIs
+        FirebaseApp.configure()
+        
+        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
+        GIDSignIn.sharedInstance().delegate = self
         return true
     }
+    
+    @available(iOS 9.0, *)
+    func application(_ application: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any])
+        -> Bool {
+            return GIDSignIn.sharedInstance().handle(url,
+                                                     sourceApplication:options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String,
+                                                     annotation: [:])
+    }
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
+        // ...
+        if let error = error {
+                print("Failed to login to Google :", error)
+                return
+            }
+        print("Successfully logged in to Google: ", user)
+        
+        guard let authentication = user.authentication else { return }
+        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
+                                                       accessToken: authentication.accessToken)
+        // ...
+        Auth.auth().signIn(with: credential) { (user, error) in
+            if let error = error {
+                print("Failed to create a firebase user with Google account :", error)
+                return
+            }
+            guard let uid = user?.uid else {return}
+            print("Successfully logged into Firebase with Google ", uid)
+            
+            
+            self.databaseRef = Database.database().reference()
+            self.databaseRef.child("user_profiles").child(user!.uid).observeSingleEvent(of: .value, with: {(snapshot) in let snapshot = snapshot.value as? NSDictionary
+            
+            if (snapshot == nil) {
+                self.databaseRef.child("user_profiles").child(user!.uid).child("name").setValue(user?.displayName)
+                self.databaseRef.child("user_profiles").child(user!.uid).child("email").setValue(user?.email)
+            } else {
+                //remove else so that every user after the sign in goes to home screen
+                //let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+                self.window?.rootViewController?.performSegue(withIdentifier: "goToHome", sender: nil)
+                }
+        })
+ 
+        }
+
+    }
+        
+    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
+        // Perform any operations when the user disconnects from app here.
+        // ...
+        
+    }
+    
+
+
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -43,4 +107,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
-

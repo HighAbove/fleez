@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4966B56491DAB95DF6CC349F /* Pods_Felagi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A425BA37732B5BDBB0D0BABE /* Pods_Felagi.framework */; };
+		5C5260D4D563F4F304653DCA /* Pods_FelagiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96D69BE91E07CAAD534F8CA /* Pods_FelagiTests.framework */; };
 		9AB503ED1F0C339400287177 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB503EC1F0C339400287177 /* AppDelegate.swift */; };
-		9AB503EF1F0C339400287177 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB503EE1F0C339400287177 /* ViewController.swift */; };
+		9AB503EF1F0C339400287177 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB503EE1F0C339400287177 /* SignInViewController.swift */; };
 		9AB503F21F0C339400287177 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB503F01F0C339400287177 /* Main.storyboard */; };
 		9AB503F41F0C339400287177 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AB503F31F0C339400287177 /* Assets.xcassets */; };
 		9AB503F71F0C339400287177 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB503F51F0C339400287177 /* LaunchScreen.storyboard */; };
 		9AB504021F0C339400287177 /* FelagiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB504011F0C339400287177 /* FelagiTests.swift */; };
+		9AB5040D1F0C36B800287177 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9AB5040C1F0C36B800287177 /* GoogleService-Info.plist */; };
+		9ABA5D271F0DE939000F145F /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABA5D261F0DE939000F145F /* HomeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +30,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0225BD43D2C32E7312743733 /* Pods-Felagi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Felagi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Felagi/Pods-Felagi.debug.xcconfig"; sourceTree = "<group>"; };
+		4D8F3C5B44A5D9EEE9F7D866 /* Pods-Felagi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Felagi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Felagi/Pods-Felagi.release.xcconfig"; sourceTree = "<group>"; };
 		9AB503E91F0C339400287177 /* Felagi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Felagi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB503EC1F0C339400287177 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9AB503EE1F0C339400287177 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9AB503EE1F0C339400287177 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		9AB503F11F0C339400287177 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9AB503F31F0C339400287177 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AB503F61F0C339400287177 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +42,13 @@
 		9AB503FD1F0C339400287177 /* FelagiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FelagiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB504011F0C339400287177 /* FelagiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FelagiTests.swift; sourceTree = "<group>"; };
 		9AB504031F0C339400287177 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AB5040C1F0C36B800287177 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9ABA5D251F0DDD3D000F145F /* Felagi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Felagi.entitlements; sourceTree = "<group>"; };
+		9ABA5D261F0DE939000F145F /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		A425BA37732B5BDBB0D0BABE /* Pods_Felagi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Felagi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD2B89751D19363EBD89E6F8 /* Pods-FelagiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FelagiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FelagiTests/Pods-FelagiTests.release.xcconfig"; sourceTree = "<group>"; };
+		D96D69BE91E07CAAD534F8CA /* Pods_FelagiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FelagiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E62CDD4BAE65C5EBD8D82205 /* Pods-FelagiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FelagiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FelagiTests/Pods-FelagiTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4966B56491DAB95DF6CC349F /* Pods_Felagi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C5260D4D563F4F304653DCA /* Pods_FelagiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +77,8 @@
 				9AB503EB1F0C339400287177 /* Felagi */,
 				9AB504001F0C339400287177 /* FelagiTests */,
 				9AB503EA1F0C339400287177 /* Products */,
+				FF469B7E413FF4A423941575 /* Pods */,
+				FC2021360774948E9DC030BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +94,15 @@
 		9AB503EB1F0C339400287177 /* Felagi */ = {
 			isa = PBXGroup;
 			children = (
+				9ABA5D251F0DDD3D000F145F /* Felagi.entitlements */,
 				9AB503EC1F0C339400287177 /* AppDelegate.swift */,
-				9AB503EE1F0C339400287177 /* ViewController.swift */,
+				9AB503EE1F0C339400287177 /* SignInViewController.swift */,
 				9AB503F01F0C339400287177 /* Main.storyboard */,
+				9ABA5D261F0DE939000F145F /* HomeTableViewController.swift */,
 				9AB503F31F0C339400287177 /* Assets.xcassets */,
 				9AB503F51F0C339400287177 /* LaunchScreen.storyboard */,
 				9AB503F81F0C339400287177 /* Info.plist */,
+				9AB5040C1F0C36B800287177 /* GoogleService-Info.plist */,
 			);
 			path = Felagi;
 			sourceTree = "<group>";
@@ -96,6 +116,26 @@
 			path = FelagiTests;
 			sourceTree = "<group>";
 		};
+		FC2021360774948E9DC030BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A425BA37732B5BDBB0D0BABE /* Pods_Felagi.framework */,
+				D96D69BE91E07CAAD534F8CA /* Pods_FelagiTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF469B7E413FF4A423941575 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0225BD43D2C32E7312743733 /* Pods-Felagi.debug.xcconfig */,
+				4D8F3C5B44A5D9EEE9F7D866 /* Pods-Felagi.release.xcconfig */,
+				E62CDD4BAE65C5EBD8D82205 /* Pods-FelagiTests.debug.xcconfig */,
+				BD2B89751D19363EBD89E6F8 /* Pods-FelagiTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +143,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9AB504061F0C339500287177 /* Build configuration list for PBXNativeTarget "Felagi" */;
 			buildPhases = (
+				5B460706C7D2D748E0BD1EB3 /* [CP] Check Pods Manifest.lock */,
 				9AB503E51F0C339400287177 /* Sources */,
 				9AB503E61F0C339400287177 /* Frameworks */,
 				9AB503E71F0C339400287177 /* Resources */,
+				E41F5A476207FA2180ABD404 /* [CP] Embed Pods Frameworks */,
+				02293B33BD065AE4D99F3235 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9AB504091F0C339500287177 /* Build configuration list for PBXNativeTarget "FelagiTests" */;
 			buildPhases = (
+				862AB4EEC3FAE857DCBB3D10 /* [CP] Check Pods Manifest.lock */,
 				9AB503F91F0C339400287177 /* Sources */,
 				9AB503FA1F0C339400287177 /* Frameworks */,
 				9AB503FB1F0C339400287177 /* Resources */,
+				407B77DA02DA89CB3CA2E3E7 /* [CP] Embed Pods Frameworks */,
+				124B0B5CBCC9631DD06E5C2F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,8 +192,12 @@
 				TargetAttributes = {
 					9AB503E81F0C339400287177 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = PAHG2435QN;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					9AB503FC1F0C339400287177 = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -182,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AB503F71F0C339400287177 /* LaunchScreen.storyboard in Resources */,
+				9AB5040D1F0C36B800287177 /* GoogleService-Info.plist in Resources */,
 				9AB503F41F0C339400287177 /* Assets.xcassets in Resources */,
 				9AB503F21F0C339400287177 /* Main.storyboard in Resources */,
 			);
@@ -196,12 +247,106 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02293B33BD065AE4D99F3235 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Felagi/Pods-Felagi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		124B0B5CBCC9631DD06E5C2F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FelagiTests/Pods-FelagiTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		407B77DA02DA89CB3CA2E3E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FelagiTests/Pods-FelagiTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B460706C7D2D748E0BD1EB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		862AB4EEC3FAE857DCBB3D10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E41F5A476207FA2180ABD404 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Felagi/Pods-Felagi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9AB503E51F0C339400287177 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AB503EF1F0C339400287177 /* ViewController.swift in Sources */,
+				9ABA5D271F0DE939000F145F /* HomeTableViewController.swift in Sources */,
+				9AB503EF1F0C339400287177 /* SignInViewController.swift in Sources */,
 				9AB503ED1F0C339400287177 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,32 +486,41 @@
 		};
 		9AB504071F0C339500287177 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0225BD43D2C32E7312743733 /* Pods-Felagi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = PAHG2435QN;
+				CODE_SIGN_ENTITLEMENTS = Felagi/Felagi.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Felagi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rightsemeon.Felagi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		9AB504081F0C339500287177 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D8F3C5B44A5D9EEE9F7D866 /* Pods-Felagi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = PAHG2435QN;
+				CODE_SIGN_ENTITLEMENTS = Felagi/Felagi.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Felagi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rightsemeon.Felagi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		9AB5040A1F0C339500287177 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E62CDD4BAE65C5EBD8D82205 /* Pods-FelagiTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -382,6 +536,7 @@
 		};
 		9AB5040B1F0C339500287177 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD2B89751D19363EBD89E6F8 /* Pods-FelagiTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -414,6 +569,7 @@
 				9AB504081F0C339500287177 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9AB504091F0C339500287177 /* Build configuration list for PBXNativeTarget "FelagiTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +578,7 @@
 				9AB5040B1F0C339500287177 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
