@@ -12,12 +12,10 @@ import GoogleSignIn
 
 class SignInViewController: UIViewController,GIDSignInUIDelegate {
     
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupGoogleSignInButton()
-
+      
     }
 
     override func didReceiveMemoryWarning() {

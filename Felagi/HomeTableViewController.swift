@@ -15,14 +15,6 @@ class HomeTableViewController: UITableViewController,GIDSignInUIDelegate {
     @IBOutlet weak var signOutButton: UIBarButtonItem!
     
     
-    func refreshInterface() {
-        if let currentUser = GIDSignIn.sharedInstance().currentUser{
-            self.signOutButton.title = "Sign Out"
-        }else {
-            self.signOutButton.title = "Sign In"
-        }
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
         refreshInterface()
@@ -104,28 +96,17 @@ class HomeTableViewController: UITableViewController,GIDSignInUIDelegate {
         // Pass the selected object to the new view controller.
     }
     */
-    /*
-    func setSignInButtonsTitle() {
-        //GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
+    //MARK: refresh the Home Page 
+    func refreshInterface() {
+        self.signOutButton.tintColor = Theme.mainColor    
         
-        /*
-         if let currentUser = Auth.auth().currentUser {
-            print("the current user is \(currentUser)")
-            signOutButton.title = "Sign In"
-        }
-        */
-        
-        Auth.auth().addStateDidChangeListener { auth, user in
-            if user != nil {
-                print("the current user is \(String(describing: user))")
-            } else {
-                print("there is no user")
-            }
+        if let currentUser = GIDSignIn.sharedInstance().currentUser{
+            self.signOutButton.title = "Sign Out"
+        }else {
+            self.signOutButton.title = "Sign In"
         }
     }
-    */
- 
-    
+   
  
     
 }

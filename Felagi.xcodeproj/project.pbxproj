@@ -17,6 +17,9 @@
 		9AB504021F0C339400287177 /* FelagiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB504011F0C339400287177 /* FelagiTests.swift */; };
 		9AB5040D1F0C36B800287177 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9AB5040C1F0C36B800287177 /* GoogleService-Info.plist */; };
 		9ABA5D271F0DE939000F145F /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABA5D261F0DE939000F145F /* HomeTableViewController.swift */; };
+		9ABA5D2B1F10B71D000F145F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABA5D2A1F10B71D000F145F /* BaseViewController.swift */; };
+		9ABA5D2D1F11A9C9000F145F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABA5D2C1F11A9C9000F145F /* UIColor.swift */; };
+		9ABA5D2F1F11A9FD000F145F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABA5D2E1F11A9FD000F145F /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		9AB5040C1F0C36B800287177 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9ABA5D251F0DDD3D000F145F /* Felagi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Felagi.entitlements; sourceTree = "<group>"; };
 		9ABA5D261F0DE939000F145F /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		9ABA5D2A1F10B71D000F145F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		9ABA5D2C1F11A9C9000F145F /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		9ABA5D2E1F11A9FD000F145F /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		A425BA37732B5BDBB0D0BABE /* Pods_Felagi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Felagi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD2B89751D19363EBD89E6F8 /* Pods-FelagiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FelagiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FelagiTests/Pods-FelagiTests.release.xcconfig"; sourceTree = "<group>"; };
 		D96D69BE91E07CAAD534F8CA /* Pods_FelagiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FelagiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +104,9 @@
 				9AB503EC1F0C339400287177 /* AppDelegate.swift */,
 				9AB503EE1F0C339400287177 /* SignInViewController.swift */,
 				9AB503F01F0C339400287177 /* Main.storyboard */,
+				9ABA5D2C1F11A9C9000F145F /* UIColor.swift */,
+				9ABA5D2E1F11A9FD000F145F /* Theme.swift */,
+				9ABA5D2A1F10B71D000F145F /* BaseViewController.swift */,
 				9ABA5D261F0DE939000F145F /* HomeTableViewController.swift */,
 				9AB503F31F0C339400287177 /* Assets.xcassets */,
 				9AB503F51F0C339400287177 /* LaunchScreen.storyboard */,
@@ -346,8 +355,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9ABA5D271F0DE939000F145F /* HomeTableViewController.swift in Sources */,
+				9ABA5D2B1F10B71D000F145F /* BaseViewController.swift in Sources */,
 				9AB503EF1F0C339400287177 /* SignInViewController.swift in Sources */,
+				9ABA5D2F1F11A9FD000F145F /* Theme.swift in Sources */,
 				9AB503ED1F0C339400287177 /* AppDelegate.swift in Sources */,
+				9ABA5D2D1F11A9C9000F145F /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
