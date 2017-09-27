@@ -9,6 +9,8 @@
 import UIKit
 import Firebase
 import GoogleSignIn
+import GooglePlaces
+import GooglePlacePicker
 
 
 @UIApplicationMain
@@ -25,6 +27,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
+        
+        GMSPlacesClient.provideAPIKey("AIzaSyC0_qSyB8lz_PCT0k4s0_o3lIHJnbOuUiA")
+        //GMSServices.provideAPIKey("AIzaSyC0_qSyB8lz_PCT0k4s0_o3lIHJnbOuUiA")
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        
+        //let layout = UICollectionViewFlowLayout()
+        //let homeController = NearbyCollectionViewController(collectionViewLayout: layout)
+        let homeController = LocationHomeViewController()
+        window?.rootViewController = UINavigationController(rootViewController: homeController)
+        
         return true
     }
     

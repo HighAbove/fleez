@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4966B56491DAB95DF6CC349F /* Pods_Felagi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A425BA37732B5BDBB0D0BABE /* Pods_Felagi.framework */; };
 		5C5260D4D563F4F304653DCA /* Pods_FelagiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96D69BE91E07CAAD534F8CA /* Pods_FelagiTests.framework */; };
+		9A709B0D1F734E27009E953C /* LocationHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A709B0C1F734E27009E953C /* LocationHomeViewController.swift */; };
 		9AB503ED1F0C339400287177 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB503EC1F0C339400287177 /* AppDelegate.swift */; };
 		9AB503EF1F0C339400287177 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB503EE1F0C339400287177 /* SignInViewController.swift */; };
 		9AB503F21F0C339400287177 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB503F01F0C339400287177 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 		9ABA5D2B1F10B71D000F145F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABA5D2A1F10B71D000F145F /* BaseViewController.swift */; };
 		9ABA5D2D1F11A9C9000F145F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABA5D2C1F11A9C9000F145F /* UIColor.swift */; };
 		9ABA5D2F1F11A9FD000F145F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABA5D2E1F11A9FD000F145F /* Theme.swift */; };
+		9ACA6B361F75ECC5005C7FE6 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACA6B351F75ECC5005C7FE6 /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* Begin PBXFileReference section */
 		0225BD43D2C32E7312743733 /* Pods-Felagi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Felagi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Felagi/Pods-Felagi.debug.xcconfig"; sourceTree = "<group>"; };
 		4D8F3C5B44A5D9EEE9F7D866 /* Pods-Felagi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Felagi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Felagi/Pods-Felagi.release.xcconfig"; sourceTree = "<group>"; };
+		9A709B0C1F734E27009E953C /* LocationHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHomeViewController.swift; sourceTree = "<group>"; };
 		9AB503E91F0C339400287177 /* Felagi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Felagi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB503EC1F0C339400287177 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AB503EE1F0C339400287177 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		9ABA5D2A1F10B71D000F145F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		9ABA5D2C1F11A9C9000F145F /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		9ABA5D2E1F11A9FD000F145F /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		9ACA6B351F75ECC5005C7FE6 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Location.swift; path = Felagi/Model/Location.swift; sourceTree = SOURCE_ROOT; };
 		A425BA37732B5BDBB0D0BABE /* Pods_Felagi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Felagi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD2B89751D19363EBD89E6F8 /* Pods-FelagiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FelagiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FelagiTests/Pods-FelagiTests.release.xcconfig"; sourceTree = "<group>"; };
 		D96D69BE91E07CAAD534F8CA /* Pods_FelagiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FelagiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A709B0B1F734DD4009E953C /* LocationPicker */ = {
+			isa = PBXGroup;
+			children = (
+				9A709B0C1F734E27009E953C /* LocationHomeViewController.swift */,
+			);
+			path = LocationPicker;
+			sourceTree = "<group>";
+		};
 		9AB503E01F0C339400287177 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +112,8 @@
 		9AB503EB1F0C339400287177 /* Felagi */ = {
 			isa = PBXGroup;
 			children = (
+				9ACA6B381F75EE39005C7FE6 /* Model */,
+				9A709B0B1F734DD4009E953C /* LocationPicker */,
 				9ABA5D251F0DDD3D000F145F /* Felagi.entitlements */,
 				9AB503EC1F0C339400287177 /* AppDelegate.swift */,
 				9AB503EE1F0C339400287177 /* SignInViewController.swift */,
@@ -110,7 +124,6 @@
 				9ABA5D261F0DE939000F145F /* HomeTableViewController.swift */,
 				9AB503F31F0C339400287177 /* Assets.xcassets */,
 				9AB503F51F0C339400287177 /* LaunchScreen.storyboard */,
-				9AB503F81F0C339400287177 /* Info.plist */,
 				9AB5040C1F0C36B800287177 /* GoogleService-Info.plist */,
 			);
 			path = Felagi;
@@ -123,6 +136,15 @@
 				9AB504031F0C339400287177 /* Info.plist */,
 			);
 			path = FelagiTests;
+			sourceTree = "<group>";
+		};
+		9ACA6B381F75EE39005C7FE6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9AB503F81F0C339400287177 /* Info.plist */,
+				9ACA6B351F75ECC5005C7FE6 /* Location.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		FC2021360774948E9DC030BA /* Frameworks */ = {
@@ -201,6 +223,7 @@
 				TargetAttributes = {
 					9AB503E81F0C339400287177 = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -357,9 +380,11 @@
 				9ABA5D271F0DE939000F145F /* HomeTableViewController.swift in Sources */,
 				9ABA5D2B1F10B71D000F145F /* BaseViewController.swift in Sources */,
 				9AB503EF1F0C339400287177 /* SignInViewController.swift in Sources */,
+				9A709B0D1F734E27009E953C /* LocationHomeViewController.swift in Sources */,
 				9ABA5D2F1F11A9FD000F145F /* Theme.swift in Sources */,
 				9AB503ED1F0C339400287177 /* AppDelegate.swift in Sources */,
 				9ABA5D2D1F11A9C9000F145F /* UIColor.swift in Sources */,
+				9ACA6B361F75ECC5005C7FE6 /* Location.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +526,7 @@
 			baseConfigurationReference = 0225BD43D2C32E7312743733 /* Pods-Felagi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Felagi/Felagi.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
@@ -509,6 +535,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rightsemeon.Felagi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -518,6 +546,7 @@
 			baseConfigurationReference = 4D8F3C5B44A5D9EEE9F7D866 /* Pods-Felagi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Felagi/Felagi.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
@@ -526,6 +555,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rightsemeon.Felagi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
