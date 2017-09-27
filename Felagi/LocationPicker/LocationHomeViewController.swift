@@ -23,8 +23,7 @@ class LocationHomeViewController: UIViewController, CLLocationManagerDelegate {
         
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(handleGeoFire))
-        //geoFire?.setLocation(CLLocation(latitutde:), forKey: <#T##String!#>, withCompletionBlock: <#T##GFCompletionBlock!##GFCompletionBlock!##(Error?) -> Void#>)
-        // Do any additional setup after loading the view.
+        
     }
     
     @objc func handleGeoFire() {
